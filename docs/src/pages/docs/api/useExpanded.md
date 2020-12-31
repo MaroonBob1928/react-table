@@ -43,6 +43,8 @@ The following properties are available on the table instance returned from `useT
   - An array of **expanded** rows.
 - `toggleRowExpanded: Function(rowId, isExpanded?)`
   - A function to toggle whether a row is expanded or not. The `isExpanded` boolean is optional, otherwise it will be a true toggle action
+- `getToggleRowExpandedProps: Function(userProps) => props`
+  - A prop getter function that returns all necessary props for an element to be clicked and toggle the row expanded or not.
 - `toggleAllRowsExpanded: Function(isExpanded?)`
   - A function to toggle whether all of the rows in the table are expanded or not. The `isExpanded` boolean is optional, otherwise it will be a true toggle action
 - `isAllRowsExpanded`
